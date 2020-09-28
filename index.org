@@ -1,0 +1,44 @@
+* Slide Options                           :noexport:
+# ======= Appear in cover-slide ====================
+#+TITLE: GraphQL with Phoenix and Absinthe
+#+SUBTITLE: Conceptos, Experiencia en Desarrollo
+#+COMPANY: For Elixir Developers Mexico
+#+AUTHOR: Albert Castellano Moreno
+#+EMAIL: acastemoreno@gmail.com
+
+# ======= Appear in thank-you-slide ================
+#+GITHUB: http://github.com/acastemoreno
+
+# ======= Appear under each slide ==================
+#+FAVICON: images/graphql-logo.png
+#+ICON: images/graphql-logo.png
+#+HASHTAG: #ElixirLang #ElixirMX #ElixirWithLove
+
+# ======= Google Analytics =========================
+#+ANALYTICS: ----
+
+# ======= Org settings =========================
+#+EXCLUDE_TAGS: noexport
+#+OPTIONS: toc:nil num:nil ^:nil
+#+LANGUAGE: es
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="theme/css/custom.css" />
+
+* Me
+- Egresado de Codeable. 
+  - Bootcamp intensivo de 6 meses para aprender Ruby y JavaScript.
+- Software Engineer en Able.
+- 5 años de experiencia con Elixir
+  - Side-Projects y trabajos freelancer.
+- Entusiasta sobre Elixir.
+
+* Objetivo de la charla
+- Why Gra
+
+* Thank You ʕ•ᴥ•ʔ
+:PROPERTIES:
+:SLIDE: thank-you-slide segue
+:ASIDE: right
+:ARTICLE: flexbox vleft auto-fadein
+:END:
+
+* Footnotes
