@@ -238,6 +238,12 @@ Funcion encargada de hacer el nexo entre GraphQL y la logica de negocios (Contex
 [[file:images/schema_code.png]]
 #+END_CENTER
 
+* A considerar
+- Authentication
+  - Plug for get current_user
+  - Middleware para fields protegidos
+- N + 1 problem
+
 * Thank You ʕ•ᴥ•ʔ
 :PROPERTIES:
 :SLIDE: thank-you-slide segue
