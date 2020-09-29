@@ -2,7 +2,7 @@
 <html>
 <head>
 <title></title>
-<!-- 2020-09-28 Mon 12:53 -->
+<!-- 2020-09-29 Tue 00:56 -->
 <meta  charset="utf-8" />
 <meta  htto-equiv="X-UA-Compatible" content="chrome=1" />
 <meta  name="generator" content="Org-mode with org-ioslide" />
@@ -38,8 +38,8 @@
     </slide>
   <slide id="sec-"  >
 <hgroup class="">
-       <h2 class=" "><div id="outline-container-org464ea7f" class="outline-2">
-<h2 id="org464ea7f">Me</h2>
+       <h2 class=" "><div id="outline-container-orgadb1978" class="outline-2">
+<h2 id="orgadb1978">Me</h2>
 </div>
 </h2>
        <h3></h3>
@@ -64,20 +64,417 @@
 </slide>
 
 </slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/graphql-logo.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orga2ede8d" class="outline-2">
+<h2 id="orga2ede8d">Qué es GraphQL?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
 <slide id="sec-"  >
 <hgroup class="">
-       <h2 class=" "><div id="outline-container-orgec7f07c" class="outline-2">
-<h2 id="orgec7f07c">Objetivo de la charla</h2>
+       <h2 class=" "><div id="outline-container-org60e07b6" class="outline-2">
+<h2 id="org60e07b6">Qué no es GraphQL?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+No tiene que ver con:
+</p>
+<ul>
+<li>Grafos</li>
+<li>Base de datos</li>
+<li>ORM / Ecto</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgd81e271" class="outline-2">
+<h2 id="orgd81e271">Qué es GraphQL?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Query Language for API's
+</p>
+
+<p>
+Main Objective:
+</p>
+<ul>
+<li><b>Dar poder a los clientes</b> en la Información que requiere.</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-org741dbb2" class="outline-2">
+<h2 id="org741dbb2">Como funciona?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div id="org3862765" class="figure">
+<p><img src="images/client-server.png" alt="client-server.png" height="300px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/graphql-logo.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-org1ef3c00" class="outline-2">
+<h2 id="org1ef3c00">Por qué usar GraphQL?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+<p>
+Estoy como con REST. Por qué salir de mi zona de confort? 
+</p>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-org2089cae" class="outline-2">
+<h2 id="org2089cae">Beneficios</h2>
 </div>
 </h2>
        <h3></h3>
        </hgroup>
 <article class="" id="text-">
 <ul>
-<li>Why Gra</li>
+<li>Declarativo</li>
+<li>Compositional</li>
+<li>Discoverable</li>
 </ul>
 
 
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgfa9be5b" class="outline-2">
+<h2 id="orgfa9be5b">Declarativo y Compositional</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div id="orgf2cbd20" class="figure">
+<p><img src="images/busqueda.png" alt="busqueda.png" height="350px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-org862bdb7" class="outline-2">
+<h2 id="org862bdb7">Declarativo y Compositional</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+REST Approach
+</p>
+<ul>
+<li>GET <code>/countries</code></li>
+<li>GET <code>/types</code></li>
+<li>GET <code>/seniority</code></li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-org4589e3f" class="outline-2">
+<h2 id="org4589e3f">Declarativo y Compositional</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+GraphQL Approach (multiple resources in one request)
+</p>
+<article class="flexbox vcenter">
+
+<div id="org970c68a" class="figure">
+<p><img src="images/multiple_in_one.png" alt="multiple_in_one.png" height="350px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgc7d1872" class="outline-2">
+<h2 id="orgc7d1872">Declarativo y Compositional</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Tambien para relaciones entre datos
+</p>
+<article class="flexbox vcenter">
+
+<div id="orgcbcf71d" class="figure">
+<p><img src="images/jobs_current_recruiter.png" alt="jobs_current_recruiter.png" height="350px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-org41f8860" class="outline-2">
+<h2 id="org41f8860">Discoverable</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<b>Schema</b>
+</p>
+<ul>
+<li>Tipo Fuerte</li>
+<li>Self-documented</li>
+<li>Documentation as code</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgf59f8f5" class="outline-2">
+<h2 id="orgf59f8f5">Cuando no usar GraphQL?</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Simple API es suficiente.</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-" class=" segue dark quote nobackground" style="background-image: url(nil)">
+<aside class="gdbar right bottom"><img src="images/graphql-logo.png"></aside><hgroup class="">
+       <h2 class=" "><div id="outline-container-orga769471" class="outline-2">
+<h2 id="orga769471">Conceptos</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="flexbox vleft auto-fadein" id="text-">
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgfe29463" class="outline-2">
+<h2 id="orgfe29463">Schema</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>Define los datos que los clientes pueden <b>pedir</b></li>
+<li>Define los datos que los clientes pueden <b>modificar</b></li>
+<li>Define los datos que los clientes pueden <b>ser notiticados</b></li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgfd56bc8" class="outline-2">
+<h2 id="orgfd56bc8">Schema</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<article class="flexbox vcenter">
+
+<div id="org4484704" class="figure">
+<p><img src="images/schema.png" alt="schema.png" height="350px" />
+</p>
+</div>
+</article>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-org6aeeb57" class="outline-2">
+<h2 id="org6aeeb57">Query, Mutation, Subscription</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+Cada uno de estos <code>types</code> define:
+</p>
+<ul>
+<li>Los datos que van a ser retornados</li>
+<li>Los datos que van a ser enviados</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-orgce2afcc" class="outline-2">
+<h2 id="orgce2afcc">Query, Mutation, Subscription</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<p>
+<b>Query</b>
+</p>
+<ul>
+<li>Pedir Información.</li>
+</ul>
+<p>
+<b>Mutation</b>
+</p>
+<ul>
+<li>Modificar Información.</li>
+</ul>
+<p>
+<b>Subscription</b>
+</p>
+<ul>
+<li>Subscribirse a cambios.</li>
+</ul>
+
+
+</article>
+
+</slide>
+
+</slide>
+<slide id="sec-"  >
+<hgroup class="">
+       <h2 class=" "><div id="outline-container-org18be1dd" class="outline-2">
+<h2 id="org18be1dd">Primitive Scalar types</h2>
+</div>
+</h2>
+       <h3></h3>
+       </hgroup>
+<article class="" id="text-">
+<ul>
+<li>ID</li>
+<li>Int</li>
+<li>Float</li>
+<li>String</li>
+<li>Boolean</li>
+<li>&lt;your type here&gt;<sup>1</sup></li>
+</ul>
+
+<footer class="source">
+<p class="footpara">1. 
+<a href="https://hexdocs.pm/absinthe/custom-scalars.html#content">Absinthe Doc for create custom scalar types</a></p>
+</footer>
 </article>
 
 </slide>

@@ -1,7 +1,7 @@
 * Slide Options                           :noexport:
 # ======= Appear in cover-slide ====================
 #+TITLE: GraphQL with Phoenix and Absinthe
-#+SUBTITLE: Conceptos, Experiencia en Desarrollo
+#+SUBTITLE: What, Why, Absinthe and Phoenix
 #+COMPANY: For Elixir Developers Mexico
 #+AUTHOR: Albert Castellano Moreno
 #+EMAIL: acastemoreno@gmail.com
@@ -31,8 +31,118 @@
   - Side-Projects y trabajos freelancer.
 - Entusiasta sobre Elixir.
 
-* Objetivo de la charla
-- Why Gra
+* Qué es GraphQL?
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+
+* Qué no es GraphQL?
+No tiene que ver con:
+- Grafos
+- Base de datos
+- ORM / Ecto
+
+* Qué es GraphQL?
+Query Language for API's
+
+Main Objective:
+- *Dar poder a los clientes* en la Información que requiere.
+
+* Comó funciona?
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 300px
+[[file:images/client-server.png]]
+#+END_CENTER
+
+
+* Por qué usar GraphQL?
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+Estoy como con REST. Por qué salir de mi zona de confort? 
+
+* Beneficios
+- Declarativo
+- Compositional
+- Discoverable
+ 
+* Declarativo y Compositional
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 350px
+[[file:images/busqueda.png]]
+#+END_CENTER
+
+* Declarativo y Compositional
+REST Approach
+- GET =/countries=
+- GET =/types=
+- GET =/seniority=
+
+* Declarativo y Compositional
+GraphQL Approach (multiple resources in one request)
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 350px
+[[file:images/multiple_in_one.png]]
+#+END_CENTER
+
+* Declarativo y Compositional
+Tambien para relaciones entre datos
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 350px
+[[file:images/jobs_current_recruiter.png]]
+#+END_CENTER
+
+* Discoverable
+*Schema*
+- Tipo Fuerte
+- Self-documented
+- Documentation as code
+
+* Cuando no usar GraphQL?
+- Simple API es suficiente.
+
+* Conceptos
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+
+* Schema
+- Define los datos que los clientes pueden *pedir*
+- Define los datos que los clientes pueden *modificar*
+- Define los datos que los clientes pueden *ser notiticados*
+
+* Schema
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 350px
+[[file:images/schema.png]]
+#+END_CENTER
+
+* Query, Mutation, Subscription
+Cada uno de estos =types= define:
+- Los datos que van a ser retornados
+- Los datos que van a ser enviados
+
+* Query, Mutation, Subscription
+*Query*
+- Pedir Información.
+*Mutation*
+- Modificar Información.
+*Subscription*
+- Subscribirse a cambios.
+
+* Primitive Scalar types
+- ID
+- Int
+- Float
+- String
+- Boolean
+- <your type here>[fn:1]
 
 * Thank You ʕ•ᴥ•ʔ
 :PROPERTIES:
@@ -42,3 +152,4 @@
 :END:
 
 * Footnotes
+[fn:1] [[https://hexdocs.pm/absinthe/custom-scalars.html#content][Absinthe Doc for create custom scalar types]]
