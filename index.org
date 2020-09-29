@@ -98,7 +98,7 @@ Tambien para relaciones entre datos
 
 * Discoverable
 *Schema*
-- Tipo Fuerte
+- Tipado Fuerte
 - Self-documented
 - Documentation as code
 
@@ -119,14 +119,9 @@ Tambien para relaciones entre datos
 
 * Schema
 #+BEGIN_CENTER
-#+ATTR_HTML: :height 350px
+#+ATTR_HTML: :height 375px
 [[file:images/schema.png]]
 #+END_CENTER
-
-* Query, Mutation, Subscription
-Cada uno de estos =types= define:
-- Los datos que van a ser retornados
-- Los datos que van a ser enviados
 
 * Query, Mutation, Subscription
 *Query*
@@ -136,13 +131,112 @@ Cada uno de estos =types= define:
 *Subscription*
 - Subscribirse a cambios.
 
-* Primitive Scalar types
+* Query, Mutation, Subscription
+Cada uno de estos =fields= contiene la *especificación de los documentos* que el cliente puede usar.
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 300px
+[[file:images/sign_in_field.png]]
+#+END_CENTER
+
+* Partes de un Field
+- Operación: =:sign_in=
+- Tipado de valor devuelto: =:session=
+- Argumentos: =:email= y =:password= (incluye informacion de su tipado y otros parametros)
+- Resolver: =&Resolvers.Accounts.sign_in/3=
+
+* Tipado
+- Scalar
+  - Absinthe Custom Types
+- Enum
+- Non-null
+- Lists
+- Object Types
+
+* Scalar types
 - ID
 - Int
 - Float
 - String
 - Boolean
-- <your type here>[fn:1]
+- <your type here>
+
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota[fn:1]
+Nota[fn:2]
+#+END_QUOTE
+
+* Absinthe Custom Types
+- datetime (UTC)
+- naive_datetime
+- date
+- time
+- decimal
+
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota[fn:3]
+#+END_QUOTE
+
+* Enum
+Es un tipo de escalar que restringe los datos a una serie de *allowed values*.
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 325px
+[[file:images/enum.png]]
+#+END_CENTER
+
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota[fn:4]
+#+END_QUOTE
+
+* List y Non-null
+- *Non-null*: Modificador para impedir valores *null* a un *type* existente.
+- *List*: Modificador para habilitar array de un mismo *type*
+
+#+BEGIN_QUOTE
+Nota[fn:5]
+#+END_QUOTE
+
+* List y Non-null
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 350px
+[[file:images/list_null.png]]
+#+END_CENTER
+
+* Object Types
+=Type= para datos estructurados
+
+* Object Types
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 400px
+[[file:images/job.png]]
+#+END_CENTER
+
+* Resolver
+Funcion encargada de hacer el nexo entre GraphQL y la logica de negocios (Contexto)
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 350px
+[[file:images/sign_in_resolver.png]]
+#+END_CENTER
+
+* Absinthe y Phoenix(Deps)
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 400px
+[[file:images/deps.png]]
+#+END_CENTER
+
+* Absinthe y Phoenix(router)
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 400px
+[[file:images/router_absinthe.png]]
+#+END_CENTER
+
+* Absinthe y Phoenix(schema)
+#+BEGIN_CENTER
+#+ATTR_HTML: :height 400px
+[[file:images/schema_code.png]]
+#+END_CENTER
 
 * Thank You ʕ•ᴥ•ʔ
 :PROPERTIES:
@@ -152,4 +246,9 @@ Cada uno de estos =types= define:
 :END:
 
 * Footnotes
-[fn:1] [[https://hexdocs.pm/absinthe/custom-scalars.html#content][Absinthe Doc for create custom scalar types]]
+[fn:1] [[https://graphql.org/learn/schema/#scalar-types][GraphQL Doc about Scalar Types]]
+[fn:2] [[https://hexdocs.pm/absinthe/custom-scalars.html#content][Absinthe Doc for create custom scalar types]]
+[fn:3] [[https://hexdocs.pm/absinthe/Absinthe.Type.Custom.html#content][Absinthe Custom Types]]
+[fn:4] [[https://graphql.org/learn/schema/#enumeration-types][GraphQL Doc for Enumeration Types]]
+[fn:5] [[https://graphql.org/learn/schema/#lists-and-non-null][GraphQL Doc for Lists and non-null types]]
+[fn:6] [[https://graphql.org/learn/schema/#object-types-and-fields][GraphQL Doc for Object Type]]
